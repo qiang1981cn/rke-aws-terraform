@@ -35,7 +35,7 @@ resource "aws_security_group" "allow-all" {
 }
 
 resource "aws_instance" "rke-node" {
-  count = 8
+  count = 1
 
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = var.instance_type
